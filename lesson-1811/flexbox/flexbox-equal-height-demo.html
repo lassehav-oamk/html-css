@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    .flex-parent
+    {
+      display: flex;
+      width: 100%;
+    }
+
+
+    .flex-item
+    {
+      flex-basis: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .red
+    {
+      background-color: red
+    }
+
+    .blue
+    {
+      background-color: blue
+    }
+
+    .green
+    {
+      background-color: green
+    }
+
+    .salmon
+    {
+      background-color: salmon
+    }
+
+    .silver
+    {
+      background-color: silver
+    }
+
+    .fuchsia
+    {
+      background-color: fuchsia
+    }
+
+    .floater {
+      float: left;
+      width: 33%;
+      height: 300px;
+    }
+
+    .clearer {
+      clear: both;
+      height: 600px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Flexbox equal height columns </h1>
+    <div class="flex-parent">
+      <div class="flex-item red">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </div>
+      <div class="flex-item blue">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+      </div>
+      <div class="flex-item green">
+          "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system"
+      </div>
+    </div>
+
+    <h1>Floating layout columns</h1>
+    <div style="margin-top: 100px;">
+        <div class="red floater">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </div>
+        <div class="blue floater">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+        <div class="green floater">
+            "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system"
+        </div>
+        <div class="clearer"></div>
+    </div>
+  </body>
+</html>

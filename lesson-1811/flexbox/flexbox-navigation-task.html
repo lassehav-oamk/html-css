@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+    <style>
+    .header
+    {
+      width: 100%;
+      height: 200px;      
+      background-color: #A8DBFF;
+      margin-bottom: 40px;
+    }
+
+    body {
+      margin: 0;   
+      font-family: 'Public Sans', sans-serif;   
+    }
+
+    .header
+    {
+      position: relative;      
+    }
+
+    .menu
+    {
+      background-color: #528AB3;
+      position: absolute;
+      bottom: 0;
+      height: 60px;
+      font-size: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+
+    li.active 
+    {
+      background-color: white;      
+    }
+
+    
+    
+
+    </style>
+  </head>
+  <body>
+
+    <div class="header">      
+      <div class="menu">
+        <ul>
+          <li>Home</li>
+          <li class="active">Products</li>
+          <li>Pricing</li>
+          <li>Documentation</li>
+          <li>API</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1>Flexbox exercise</h1>
+    Your task is to use flexbox to modify the navigation bar above to look like in the image below:
+    <br>
+    <img src="navigation-task-goal.PNG" style="width: 75%; border: 1px solid black;">
+  </body>
+</html>
