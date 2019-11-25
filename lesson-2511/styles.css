@@ -1,0 +1,21 @@
+.button {
+  background-color: goldenrod;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 24px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px gray;
+  display: inline-block;
+  transition-duration: 0.25s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  left: 0px;
+}
+
+.button:hover {
+  background-color: white;
+  box-shadow: 40px 40px gray;
+  left: 40px;
+}

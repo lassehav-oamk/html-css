@@ -1,0 +1,15 @@
+.box
+{
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray;
+  position: absolute;
+  left: 0px;
+  transition-duration: 0.25s;
+  transition-property: left;
+}
+
+.endBox
+{
+  left: 300px;
+}

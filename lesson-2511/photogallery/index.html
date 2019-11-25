@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <title>CSS3 Image Gallery Transition Example</title>
+  <link rel="stylesheet" href="style.css"> 
+  <script>
+		function overlayFull()
+		{
+			document.querySelector('.overlay').classList.toggle('fullsize');
+			document.querySelector('.bigimage').classList.toggle('bigimage-visible');
+		}
+
+		function init()
+		{
+			let images = document.querySelectorAll('.image img');
+			images.forEach(img => img.addEventListener('click', overlayFull));
+		}
+
+		function closeOverlay()
+		{
+			document.querySelector('.overlay').classList.toggle('fullsize');
+			document.querySelector('.bigimage').classList.toggle('bigimage-visible');
+		}
+  </script>
+</head>
+
+<body onload="init()">
+
+	<h1>Image Gallery Example</h1>
+	
+	<div class="image">
+		<img src="testimage_thumb.jpg">
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg">
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg" >
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg" >
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg" >
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg" >
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg">
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg">
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg">
+	</div>
+	<div class="image">
+		<img src="testimage_thumb.jpg">
+	</div>
+    
+	<div class="overlay" >		
+		<img src="testimage.jpg" class="bigimage">
+		<div id="closer" onclick="closeOverlay()">X</div>
+	</div>
+	
+</body>
+</html>
