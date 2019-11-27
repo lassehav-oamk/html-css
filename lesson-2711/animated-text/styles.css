@@ -1,0 +1,66 @@
+.text-container {
+  position: absolute; 
+  left: calc(50% - 300px);
+  top: 40%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.anim {
+  font-size: 75px;
+  display: inline-block;
+  animation-name: characters;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;  
+}
+
+.anim:nth-of-type(0n+2) { animation-delay: 250ms; }
+.anim:nth-of-type(0n+3) { animation-delay: 500ms; }
+.anim:nth-of-type(0n+4) { animation-delay: 750ms; }
+.anim:nth-of-type(0n+5) { animation-delay: 1000ms; }
+.anim:nth-of-type(0n+7) { animation-delay: 1250ms; }
+.anim:nth-of-type(0n+8) { animation-delay: 1500ms; }
+.anim:nth-of-type(0n+9) { animation-delay: 1750ms; }
+.anim:nth-of-type(0n+10) { animation-delay: 2000ms; }
+.anim:nth-of-type(0n+11) { animation-delay: 2250ms; }
+
+
+@keyframes characters {
+  0% {
+    transform: translateY(-500px) rotate(180deg);
+    color: white;
+  }
+
+  50% {
+    transform: translateY(0px) rotate(180deg);
+    color: blue;
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.line
+{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: black;
+  height: 5px;
+  width: 0px;
+  animation-name: lineGrow;
+  animation-duration: 0.5s;
+  animation-delay: 2250ms;
+  animation-fill-mode: both;
+}
+
+@keyframes lineGrow
+{
+  0% { 
+    width: 0px;
+  }
+
+  100% {
+    width: 582px;
+  }
+}
