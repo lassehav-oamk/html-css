@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="js-styles.css">
+    <title>Demonstration of html and css animations</title>
+    <script>
+      function myCode()
+      {
+        console.log("it works");
+        let element = document.querySelector('.box');
+        //element.style.left = "300px";
+        console.log(element.className);
+
+        //element.className += " endBox";
+        // if(element.className.includes("endBox"))
+        // {
+        //   element.className = "box";
+        // }
+        // else
+        // {
+        //   element.className = "box endBox";
+        // }
+        element.classList.toggle('endBox');
+
+        console.log(element.className);
+      }
+
+    </script>
+  </head>
+  <body>
+    <button onclick="myCode()">Start</button>
+    <div class="box"></div>
+    
+  </body>
+</html>

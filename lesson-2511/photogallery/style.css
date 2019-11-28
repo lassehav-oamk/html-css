@@ -1,0 +1,84 @@
+h1
+{
+	font-family:   �Palatino Linotype�, �Book Antiqua�, Palatino, serif;
+}
+
+.image
+{
+	float: left;
+	padding: 5px;
+	margin: 10px;
+	margin-bottom: 30px;	
+	border: 1px dashed black;
+	
+	transform: rotate(-10deg);	
+	transition:all 0.25s ease;
+}
+
+
+.image:nth-of-type(odd)
+{
+	transform: rotate(8deg);
+}
+
+.image:nth-of-type(3n)
+{
+	transform: rotate(-6deg);
+}
+.image:nth-of-type(5n)
+{
+	transform: rotate(12deg);
+}
+
+.image:hover
+{
+	transform: rotate(0deg);
+	border: 1px solid rgb(200,100,100);
+	box-shadow: 5px 5px 3px rgba(150,150,150, 0.8);
+}
+
+.overlay
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  opacity: 0;
+	background-color: rgba(0,0,0,0.9);   
+	transition-property: opacity;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	pointer-events: none;
+}
+
+.bigimage
+{
+    position: relative;
+    left: -50%;
+    top: 50%;
+    margin-left: -512px;
+		margin-top: -341px;
+		transition: 0.25s left;
+}
+
+.bigimage-visible {
+	left: 50%;
+}
+
+.fullsize
+{
+	opacity: 1;
+  pointer-events: auto;
+}
+
+#closer {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: white;
+	font-size: 24px;
+	text-align: center;
+}
