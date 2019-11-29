@@ -53,8 +53,10 @@
     transform: translate(0px, 0px);
   }
 
+
   25% {
     transform: translate(400px, 0px) rotateY(180deg);
+    perspective: 200px;
   }
 
   50% {
